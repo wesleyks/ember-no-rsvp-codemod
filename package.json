@@ -1,6 +1,6 @@
 {
   "name": "ember-no-rsvp-codemod",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "a command line tool for migrating code off rsvp promises",
   "keywords": [
     "codemod-cli",
