@@ -1,6 +1,23 @@
 {
   "name": "ember-no-rsvp-codemod",
-  "version": "0.1.0",
+  "version": "0.0.0",
+  "description": "a command line tool for migrating code off rsvp promises",
+  "keywords": [
+    "codemod-cli",
+    "codemod",
+    "ember",
+    "rsvp"
+  ],
+  "homepage": "https://github.com/wesleyks/ember-no-rsvp-codemod",
+  "bugs": {
+    "url": "https://github.com/wesleyks/ember-no-rsvp-codemod/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wesleyks/ember-no-rsvp-codemod.git"
+  },
+  "license": "MIT",
+  "author": "Wesley Sun",
   "scripts": {
     "lint": "eslint --cache .",
     "test": "codemod-cli test",
@@ -9,9 +26,6 @@
     "coveralls": "cat ./coverage/lcov.info | node node_modules/.bin/coveralls"
   },
   "bin": "./bin/cli.js",
-  "keywords": [
-    "codemod-cli"
-  ],
   "dependencies": {
     "codemod-cli": "^3.2.0"
   },
