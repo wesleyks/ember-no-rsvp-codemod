@@ -1,4 +1,4 @@
-import { Promise, reject, resolve } from 'rsvp';
+import { Promise, reject, resolve, all } from 'rsvp';
 import Foo from 'foo'; // untouched
 
 async function awaitPromises() {
@@ -7,4 +7,6 @@ async function awaitPromises() {
     await reject(new Error('Error'));
 
     await resolve(123);
+
+    await all();
 }

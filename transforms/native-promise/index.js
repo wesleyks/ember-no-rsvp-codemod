@@ -1,8 +1,8 @@
 const { getParser } = require('codemod-cli').jscodeshift;
 
 const RSVP_PACKAGE = 'rsvp';
-const SPECIFIERS_TO_REMOVE = ['Promise', 'reject', 'resolve'];
-const SPECIFIERS_TO_REFACTOR = ['reject', 'resolve'];
+const SPECIFIERS_TO_REMOVE = ['Promise', 'reject', 'resolve', 'all'];
+const SPECIFIERS_TO_REFACTOR = ['reject', 'resolve', 'all'];
 
 module.exports = function transformer(file, api) {
   const j = getParser(api);

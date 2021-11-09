@@ -6,4 +6,6 @@ async function awaitPromises() {
     await Promise.reject(new Error('Error'));
 
     await Promise.resolve(123);
+
+    await Promise.all();
 }
